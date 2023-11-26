@@ -27,10 +27,13 @@ jobs:
                   echo test, and deploy your project.
 
              - name: Install Dependencies 
-               run: npm install
+               run: npm ci
 
              - name: Build Project
-               run: npm run
-
-          
+               run: npm run 
+             
+             - name: Test aplication
+               run: npm run build
+             
+               
               
